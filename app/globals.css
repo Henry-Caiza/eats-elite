@@ -2,26 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+::-webkit-scrollbar {
+    width: 4px;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+::-webkit-scrollbar-track {
+    background: #ddaff12f;
+
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+::-webkit-scrollbar-thumb {
+    background: #ec7b6a84;
+    border-radius: 4px;
+}
+
+
+.container-orders-car::-webkit-scrollbar {
+    width: 2px;
+    padding-left: 10px;
+}
+
+.container-orders-car::-webkit-scrollbar-track {
+    background: transparent;
+    padding-left: 10px;
+}
+
+.container-orders-car::-webkit-scrollbar-thumb {
+    background: #ec7b6a84;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+canvas canvas {
+    background-color: red;
 }
